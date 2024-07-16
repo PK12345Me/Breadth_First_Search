@@ -4,6 +4,7 @@ grid = [[1, 2, 3],
         [7, 8, 9]]
 
 The code employs a Breadth-First Search (BFS) algorithm, utilizing a FIFO queue and an explored set. The Explored set ensures that the code does not enter an infinite loop by revisiting the same node repeatedly. The FIFO queue determines the order in which nodes are explored next.
+
 ![image](https://github.com/user-attachments/assets/3224bc5a-de07-4965-9820-5fe791633757)
 
 Suppose we want to travel from '9' to '1', and the only available movements are Up, Down, Left, and Right. Starting from 9, the FIFO queue initially contains [6, 8] (represented as a list for easy value unpacking). Only 6 and 8 are selected because 9 is at the corner with no other movement options (no diagonal movements allowed). With this step, 9 is added to the Explored set.
