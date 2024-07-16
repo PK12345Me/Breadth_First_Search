@@ -1,5 +1,6 @@
 The purpose behind this code was to learn and demonstrate Breadth First Search(BFS) and traverse from point a to point b inside of a 3x3 matrix as given below:
-grid = [[1, 2, 3], 
+
+        [[1, 2, 3], 
         [4, 5, 6], 
         [7, 8, 9]]
 
