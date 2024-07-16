@@ -14,16 +14,6 @@ This process continues until the currently expanded value from the FIFO queue ma
 
 This traversal can be visualized in the form of the following table:
 
-Node Expanded | Nodes Explored              | FIFO Queue
------------------------------------------------------------
-9             | {9}                         | [6, 8]
-6             | {9, 6}                      | [8, 3, 5, 9]
-8             | {9, 6, 8}                   | [3, 5, 9, 5, 7, 9]
-3             | {9, 6, 8, 3}                | [5, 9, 5, 7, 9, 2, 6]
-5             | {9, 6, 8, 3, 5}             | [9, 5, 7, 9, 2, 6, 4, 6, 8]
-7             | {9, 6, 8, 3, 5, 7}          | [5, 7, 9, 2, 6, 4, 6, 8, 4, 8]
-2             | {9, 6, 8, 3, 5, 7, 2}       | [7, 9, 2, 6, 4, 6, 8, 4, 8, 1, 1, 3]
-4             | {9, 6, 8, 3, 5, 7, 2, 4}    | [9, 2, 6, 4, 6, 8, 4, 8, 1, 1, 3, 1, 5, 7]
-1             | {9, 6, 8, 3, 5, 7, 2, 4, 1} | [2, 6, 4, 6, 8, 4, 8, 1, 1, 3, 1, 5, 7]
+![image](https://github.com/user-attachments/assets/9435fe89-e7a9-47e6-abce-8955f5b75252)
 
 Please note - the FIFO Queue stores all nodes, regardless of whether they have been explored or not. However, during expansion, nodes are checked for exploration status to avoid revisiting them.
